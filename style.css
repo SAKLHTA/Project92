@@ -1,0 +1,54 @@
+.container {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(3, 50px);
+  gap: 10px;
+  background: blue;
+}
+.box3 {
+  background: red;
+}
+.box1 {
+  background: yellow;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  background: blanchedalmond;
+}
+.box5 {
+  background: aqua;
+}
+.box4 {
+  background: #469891;
+}
+.box6 {
+  background: burlywood;
+}
+.container {
+  grid-template-areas:
+    "header header menu menu menu"
+    "header header content content desc1"
+    "footer footer content content desc";
+}
+.box1 {
+  grid-area: header;
+}
+.box2 {
+  grid-area: menu;
+}
+.box3 {
+  grid-area: footer;
+}
+.box4 {
+  grid-area: content;
+}
+.box5 {
+  grid-area: desc1;
+}
+.box6 {
+  grid-area: desc;
+}
